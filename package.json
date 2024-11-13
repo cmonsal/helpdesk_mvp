@@ -3,7 +3,9 @@
 	"scripts": {
 		"postinstall": "husky install && cd desk && yarn install",
 		"dev": "cd desk && yarn dev",
-		"build": "cd desk && yarn build"
+		"build": "cd desk && yarn build",
+		"start": "cd desk && yarn start",
+		"preview": "cd desk && yarn preview"
 	},
 	"workspaces": ["desk", "frappe-ui"],
 	"dependencies": {
