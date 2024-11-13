@@ -103,4 +103,14 @@ export default defineConfig({
   optimizeDeps: {
     include: ["feather-icons", "showdown", "tailwind.config.js"],
   },
+  server: {
+    port: parseInt(process.env.PORT || 3000),
+    host: true, // Listening on all available network interfaces
+    strictPort: true, // Fail if port is already in use
+  },
+  preview: {
+    port: parseInt(process.env.PORT || 3000),
+    host: true, // Listening on all available network interfaces
+    strictPort: true, // Fail if port is already in use
+  }
 });
