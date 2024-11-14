@@ -5,8 +5,8 @@
 	  "postinstall": "husky install && cd desk && yarn install",
 	  "dev": "cd desk && yarn dev",
 	  "build": "cd desk && yarn build",
-	  "start": "cd desk && yarn preview --host 0.0.0.0 --port ${PORT:-3000}",
-	  "preview": "cd desk && yarn preview"
+	  "start": "cd desk && yarn preview --port ${PORT:-3000} --host 0.0.0.0",
+	  "preview": "cd desk && yarn preview --port ${PORT:-3000} --host 0.0.0.0"
 	},
 	"workspaces": ["desk", "frappe-ui"],
 	"dependencies": {
@@ -27,5 +27,10 @@
 	"engines": {
 	  "node": ">=18.0.0",
 	  "yarn": ">=1.22.0"
+	},
+	"resolutions": {
+	  "string-width": "4.2.3",
+	  "strip-ansi": "6.0.1",
+	  "wrap-ansi": "7.0.0"
 	}
   }
