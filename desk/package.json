@@ -3,14 +3,11 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"engines": {
-		"node": ">=18.0.0"
-	},
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build --base=/assets/helpdesk/desk/ && yarn copy-html-entry",
 		"preview": "vite preview",
-		"start": "vite preview --port $PORT",
+		"start": "vite preview --port ${PORT:-3000}",
 		"serve": "vite preview",
 		"copy-html-entry": "cp ../helpdesk/public/desk/index.html ../helpdesk/www/helpdesk/index.html"
 	},
