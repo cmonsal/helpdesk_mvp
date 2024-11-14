@@ -1,0 +1,12 @@
+[build]
+builder = "nixpacks"
+buildCommand = "yarn build"
+watchPatterns = [
+  "desk/**/*.js",
+  "desk/**/*.vue",
+  "package.json"
+]
+
+[deploy]
+startCommand = "yarn start"
+restartPolicyType = "ON_FAILURE"
